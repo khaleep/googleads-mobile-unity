@@ -122,6 +122,12 @@ namespace GoogleMobileAds.Api
                 this.Extras.Add(key, value);
                 return this;
             }
+
+            public Builder SetNPA(bool value)
+            {
+                this.AddExtra("npa", value ? "1" : "0");
+                return this;
+            }
         }
     }
 }
